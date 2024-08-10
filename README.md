@@ -1,24 +1,30 @@
-# README
+## アプリ名
+### zero-second-thinking
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+このアプリは「0秒思考」で書き出した内容を記録していくメモアプリです。
+「0秒思考」とは赤羽雄二氏が著書の中で提唱された思考法で、A4用紙に1分間で20～30字程度のメモを4～6行程度書いていくことで思考を整理する方法です。
 
-Things you may want to cover:
+## 主な機能
 
-* Ruby version
+- ユーザー認証（サインアップ、ログイン、ログアウト）
+- メモ画像のアップロードと保存
+- 画像からのタイトルやタグの自動検出（OCR）
+- カレンダー形式でのメモ管理
+- メモに位置情報を付加
+- コメント機能
+- メモのタグや日付による検索機能
 
-* System dependencies
+## 使用技術
 
-* Configuration
+- Ruby on Rails
+- PostgreSQL（またはSQLite3）
+- ActiveStorage（画像アップロード）
+- Tesseract-OCR（文字認識）
+- Geocoder（位置情報取得）
+- Bootstrap（フロントエンドデザイン）
+- その他の関連Gem（CarrierWave, Devise, Ransack, Simple Calendar など）
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 現在の開発状況
+このアプリは各機能ごとに開発を進めていきます。
+現在の開発状況としては、ユーザー機能とメモ画像のアップロードまでです。
