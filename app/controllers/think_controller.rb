@@ -1,0 +1,2 @@
+class ThinkController < ApplicationController
+end
