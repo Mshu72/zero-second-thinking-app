@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'thinks#index'
-  resources :thinks, only: :index
+  resources :thinks, only: [:index, :new]
 end
